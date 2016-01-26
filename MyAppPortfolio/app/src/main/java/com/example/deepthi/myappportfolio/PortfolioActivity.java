@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class PortfolioActivity extends AppCompatActivity {
@@ -44,22 +45,22 @@ public class PortfolioActivity extends AppCompatActivity {
         int duration = Toast.LENGTH_SHORT;
         switch(view.getId()) {
             case R.id.spotify_button:
-                text = "This button will launch the Spotify Streamer app";
+                text = getResources().getText(R.string.spotify_toast);
                 break;
             case R.id.scores_button:
-                text = "This button will launch the Football Scores app";
+                text = getResources().getText(R.string.scores_toast);
                 break;
             case R.id.library_button:
-                text = "This button will launch the Library app";
+                text = getResources().getText(R.string.library_toast);
                 break;
             case R.id.bigger_button:
-                text = "This button will launch the BuildItBigger app";
+                text = getResources().getText(R.string.bigger_toast);
                 break;
             case R.id.xyz_button:
-                text = "This button will launch the XYZ Reader app";
+                text = getResources().getText(R.string.xyz_toast);
                 break;
             case R.id.capstone_button:
-                text = "This button will launch the Capstone app";
+                text = getResources().getText(R.string.capstone_toast);
                 break;
             default:
                 break;
